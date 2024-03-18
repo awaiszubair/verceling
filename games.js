@@ -10,3 +10,5 @@ const Games = [
     "https://i.pinimg.com/564x/91/48/a6/9148a68707c28137a55e52467031a7f1.jpg",
     "https://i.pinimg.com/564x/2a/ba/5d/2aba5de9fdfee5d819b3600fb0d1e08a.jpg"
 ]
+
+module.exports = Games
