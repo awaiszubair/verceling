@@ -1,9 +1,14 @@
 const express = require('express');
+const Tech = require('./tech');
+const Games = require('./games');
 const app = express();
 
-app.get('/', (req, res) => {
-    res.status(200).json({ msg: "Server is Listening" })
-})
+
+
+
+app.use('/tech', require('./routes/Tech'));
+app.use('/games', require('./routes/Games'))
+
 
 
 app.listen(3000, () => {
