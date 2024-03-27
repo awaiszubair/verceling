@@ -1,6 +1,4 @@
 const express = require('express');
-const Tech = require('./tech');
-const Games = require('./games');
 const app = express();
 
 
@@ -8,7 +6,7 @@ const app = express();
 
 app.use('/tech', require('./routes/Tech'));
 app.use('/games', require('./routes/Games'))
-
+app.use('/gate', require('./routes/Gate'));
 
 
 app.listen(3000, () => {
